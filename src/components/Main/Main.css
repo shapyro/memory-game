@@ -1,6 +1,5 @@
 
 .main {
-  /* background-image: url('sky.png');  */
   display: flex;
   min-height: 80%;
   -ms-flex-wrap: wrap;
@@ -13,17 +12,9 @@
   margin: 0 auto;
 }
 
-
-/* .jazz {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-} */
-
 @keyframes shake {
   10%, 90% {
-    transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
   }
   
   20%, 80% {

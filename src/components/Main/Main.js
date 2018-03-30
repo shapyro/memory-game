@@ -38,7 +38,7 @@ class Main extends Component {
         clickedIDs: idsReset,
         ponies: randoPonies,
       }
-      this.setState( loseState )
+      this.setState(loseState)
       
       this.props.currentScore(message);
       
@@ -58,7 +58,7 @@ class Main extends Component {
         clickedIDs: ids,
         ponies: randomPonies,
       }
-      this.setState( winState )
+      this.setState(winState)
       
       this.props.currentScore(message);
       

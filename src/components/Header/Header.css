@@ -11,10 +11,6 @@ header {
   white-space: nowrap;
 }
 
-/* article, aside, footer, header, nav, section {
-  display: block;
-} */
-
 .brand {
   font-weight: 900;
 }
@@ -26,7 +22,6 @@ header li {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  /* font-weight: 900; */
   font-size: 30px;
 }
 
@@ -39,3 +34,28 @@ ul, menu, dir {
   -webkit-margin-end: 0px;
   -webkit-padding-start: 40px;
 }
+
+.color2 {
+  animation-duration: 1200ms;
+  animation-name: blink;
+  animation-direction: alternate;
+  -webkit-animation:blink 1200ms; /* Safari and Chrome */
+}
+@keyframes blink {
+  from {
+      color:red;
+  }
+  to {
+      color:white;
+  }
+}
+@-webkit-keyframes blink {
+  from {
+      color:red;
+  }
+  to {
+      color:white;
+  }
+}
+
+

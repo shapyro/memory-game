@@ -23,6 +23,7 @@ class App extends Component {
     super(props)
     this.
     state = {
+      color: '',
       topScore: 0,
       score: 0,
       message: 'Click A Pony'
@@ -34,9 +35,13 @@ class App extends Component {
   currentScore = (newmessage) => {
     console.log(newmessage)
 
+    var headClass;
+
     // did they guess correct?
     if (newmessage === 'Correct') {
+
       var updateState = {
+        color: 'color1',
         score: this.state.score + 1,
         message: newmessage
       }
@@ -47,6 +52,7 @@ class App extends Component {
       this.setState( updateState )
     } else {
       var updateState = {
+        color: 'color2',
         score: 0,
         message: 'You Guessed Incorrect'
       }
@@ -60,6 +66,7 @@ class App extends Component {
       <div>
         <Header 
           title="Clicky Game"
+          color={this.state.color}
           score={`Score: ${this.state.score}`}
           topScore={` | Top Score: ${this.state.topScore}`}
           message={this.state.message}
